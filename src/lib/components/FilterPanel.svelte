@@ -156,7 +156,7 @@
       <input
         type="text"
         bind:value={localFilters.name}
-        placeholder="Filter by name, club, nation.."
+        placeholder="Filter by name, club, nation code.."
         class="w-full pr-12 px-3 py-2 bg-slate-900 text-slate-50 placeholder-slate-500 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-accent-light focus:border-transparent transition-colors"
         name="search"
         id="search"
