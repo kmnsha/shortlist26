@@ -41,12 +41,12 @@
       <div class="flex-1 flex justify-center">
         <div class="w-12 h-1 bg-slate-600 rounded-full"></div>
       </div>
-      <button
+      <!-- <button
         on:click={handleClose}
         class="ml-2 p-1 rounded hover:bg-slate-700 transition-colors text-slate-400 hover:text-slate-50 z-80"
       >
         <X size={20} />
-      </button>
+      </button> -->
     </div>
 
     <!-- Content -->

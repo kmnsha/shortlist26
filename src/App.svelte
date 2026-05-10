@@ -183,6 +183,13 @@
     {/if}
   </main>
 
+  <!-- Footer -->
+  <footer class="bg-slate-950 p-2 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8 text-slate-700 text-xs text-right">
+      © 2026 племенника е ухо
+    </div>
+  </footer>
+
   <!-- Player Detail Modal/Bottom Sheet -->
   {#if showDetail && selectedPlayer}
     <PlayerDetail

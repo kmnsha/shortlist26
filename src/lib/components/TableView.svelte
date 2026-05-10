@@ -14,8 +14,8 @@
     { key: 'position', label: 'Position', sortable: true },
     { key: 'age', label: 'Age', sortable: true },
     { key: 'wage', label: 'Wages', sortable: true },
-    { key: 'price', label: 'Value', sortable: true },
-    { key: 'expiry', label: 'Expires', sortable: true }
+    { key: 'expiry', label: 'Expires', sortable: true },
+    { key: 'price', label: 'Value', sortable: true }
   ]
 
   function handleSort(field) {
