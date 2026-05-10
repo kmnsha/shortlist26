@@ -35,7 +35,7 @@
   ></div>
 
   <!-- Bottom Sheet -->
-  <div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-xs max-h-[90vh] bg-slate-800 border-t border-slate-600 rounded-t-2xl shadow-2xl z-50 overflow-y-auto overscroll-contain animate-slide-up">
+  <div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-xs max-h-[90vh] bg-slate-800 border border-solid border-slate-800 rounded-t-2xl shadow-2xl z-50 overflow-y-auto overscroll-contain animate-slide-up">
     <!-- Handle Bar & Close Button -->
     <div class="sticky top-0 bg-slate-800 px-3 py-2 -mb-8 flex items-center justify-between">
       <div class="flex-1 flex justify-center">
