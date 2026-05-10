@@ -60,13 +60,13 @@ export function formatPosition(positions) {
  */
 export function getPositionColor(position) {
   const colors = {
-    GK: 'bg-slate-700 text-slate-200',
-    CB: 'bg-slate-600 text-slate-100',
-    LB: 'bg-slate-600 text-slate-100',
-    RB: 'bg-slate-600 text-slate-100',
-    CM: 'bg-slate-500 text-slate-100',
-    AM: 'bg-slate-500 text-slate-100',
-    ST: 'bg-slate-400 text-slate-900'
+    GK: 'bg-additional-emerald/20 border border-additional-emerald text-slate-100',
+    CB: 'bg-additional-violet/20 border border-additional-violet text-slate-100',
+    LB: 'bg-additional-cyan/20 border border-additional-cyan text-slate-100',
+    RB: 'bg-additional-indigo/20 border border-additional-indigo text-slate-100',
+    CM: 'bg-additional-sage/20 border border-additional-sage text-slate-100',
+    'AM/W': 'bg-additional-amber/20 border border-additional-amber text-slate-100',
+    ST: 'bg-additional-rose/20 border border-additional-rose text-slate-100'
   }
   return colors[position] || 'bg-slate-700 text-slate-200'
 }

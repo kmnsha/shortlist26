@@ -217,7 +217,7 @@ Place club logos in `img/clubs/`
 - **Size**: 64x64px minimum
 
 ### Step 4: Add Flag Images (Optional)
-Place flag images in `img/nations/`
+Place flag images in `/img/flags/`
 - **Filename**: ISO 2-letter code (e.g., `por.png`, `irl.png`)
 - **Format**: png
 - **Size**: 32x24px (4:3 aspect ratio)

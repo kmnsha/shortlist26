@@ -121,7 +121,7 @@ npm run preview
 - Recommended: Square format, 64x64px minimum
 
 ### Flag Images
-- Add country flags to `/img/nations/`
+- Add country flags to `/img/flags/`
 - File naming: ISO country code in lowercase (e.g., `por.png`, `irl.png`)
 - Recommended: Rectangle format, 32x24px minimum
 
@@ -134,9 +134,9 @@ The player data in `shortlist26.json` follows this structure:
   "id": "player_id",
   "name": "Player Name",
   "visuals": {
-    "playerPhoto": "img/players/55038655.png",
-    "clubBadge": "img/clubs/wolves.png",
-    "nationFlag": "img/por.png"
+    "playerPhoto": "/img/players/55038655.png",
+    "clubBadge": "/img/clubs/wolves.png",
+    "nationFlag": "/img/por.png"
   },
   "info": {
     "club": "Club Name",

@@ -5,7 +5,9 @@
   const dispatch = createEventDispatcher()
   export let viewMode = 'table'
   export let showFilters = true
-  let showSettings = false
+  let showSettings = showFilters
+
+  $: showSettings = showFilters
 
   function toggleView(mode) {
     viewMode = mode
@@ -43,7 +45,7 @@
 
   <button
     on:click={toggleFilters}
-    class="p-2 rounded-full transition-all {showFilters 
+    class="p-2 rounded-full transition-all {showSettings 
       ? 'bg-accent-light text-slate-900' 
       : 'bg-slate-700 text-slate-200 hover:bg-slate-600'}"
     title="Toggle filters"

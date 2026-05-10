@@ -28,6 +28,15 @@ export default {
           light: '#fef3c7',
           DEFAULT: '#f59e0b',
           dark: '#d97706'
+        },
+        additional: {
+          emerald:	'#065f46', //GK
+          violet:	'#5b21b6', // CB
+          indigo:	'#3730a3', //RB
+          cyan:	'#155e75', //LB
+          sage:	'#3f6212', // CM,
+          amber:	'#92400e', // AM/W
+          rose:	'#9f1239' // ST
         }
       },
       borderRadius: {

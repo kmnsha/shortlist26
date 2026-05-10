@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte'
-  import { formatCurrency, formatDate, getTagColor } from '../utils'
+  import { formatCurrency, formatDate, getTagColor, getPositionColor } from '../utils'
   import { Heart } from 'lucide-svelte'
 
   const dispatch = createEventDispatcher()
@@ -24,7 +24,7 @@
       <!-- Player Image -->
       <div class="relative h-36 bg-slate-800 overflow-hidden">
         <img
-          src='img/players/{player.visuals.playerPhoto}'
+          src='/img/players/{player.visuals.playerPhoto}'
           alt={player.name}
           class="h-full object-cover group-hover:scale-105 transition-transform"
         />
@@ -32,7 +32,7 @@
 
         <!-- Club Badge -->
         <img
-          src='img/clubs/{player.visuals.clubBadge}'
+          src='/img/clubs/{player.visuals.clubBadge}'
           alt={player.info.club}
           class="absolute top-2 right-2 w-20 h-20 p-1 object-contain opacity-40"
         />
@@ -55,7 +55,7 @@
           </h3>
           <div class="flex items-center gap-1 text-xs text-slate-400 mt-1">
             <img
-              src='img/nations/{player.visuals.nationFlag}'
+              src='/img/flags/{player.visuals.nationFlag}'
               alt={player.info.nation}
               class="w-4 h-3 object-cover"
             />
@@ -70,7 +70,7 @@
         <!-- Position & Stats -->
         <div class="flex flex-wrap gap-1">
           {#each player.info.position as pos (pos)}
-            <span class="px-2 py-1 text-xs font-semibold rounded bg-slate-700 text-slate-200">
+            <span class="px-2 py-1 text-xs font-semibold rounded {getPositionColor(pos)}">
               {pos}
             </span>
           {/each}

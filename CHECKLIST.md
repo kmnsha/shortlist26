@@ -32,9 +32,9 @@
 - [x] `CHECKLIST.md` - This file
 
 ### Asset Directories
-- [x] `img/players/` - (empty, ready for images)
-- [x] `img/clubs/` - (empty, ready for badges)
-- [x] `img/nations/` - (empty, ready for flags)
+- [x] `/img/players/` - (empty, ready for images)
+- [x] `/img/clubs/` - (empty, ready for badges)
+- [x] `/img/flags/` - (empty, ready for flags)
 
 ### Data
 - [x] `shortlist26.json` - 400+ players configured
@@ -156,7 +156,7 @@ Directory: `img/clubs/`
 - Currently: Empty (shows placeholders)
 
 ### Flag Images
-Directory: `img/nations/`
+Directory: `/img/flags/`
 - File naming: ISO code (e.g., `por.png`, `irl.png`)
 - Format: png
 - Size: 32x24px

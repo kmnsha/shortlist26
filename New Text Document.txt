@@ -1,0 +1,104 @@
+wow stellar work..
+
+actually can you help me build this single page web app? the tech stack I'm looking at is SvelteKit + Tailwind CSS + Lucide icons.
+
+It is essentially a a football player shortlist that supports filtration and advanced data and chart visualisations for a limited selection of players suitable for Newcastle United's transfer summer 2026.
+that's what the json we created is for.
+
+I want a clean modern dark theme aesthetic. I like the idea of baby blue or gold as the accent color.. it should have more of an webapp feel as ideally I would want the following features, while remaining somewhat usable on a mobile device. 
+
+key features:
+
+- a list of ~400 players, loaded from the attached shortlist26.json.
+
+- a mechanism to display the list as a easily sortable table view or as cards.. ideally the tableview would contain all the data on the players, while the card view might have fewer details and a detailed view popup (or Bottom Sheet preferably) which can be opened on tap on the card.
+
+- the list (table or the card) should have filters that allow filtration of the shortlist by: player name, position, asking price range, height range, wage range, contract expiry date.
+
+- tags - I'll use them to list positives (greenish color) and negatives (pinkish) 
+
+- amounts - the wages and the asking price should be displayed nicely formatted in the UI like "£150k" / "£300M" etc..
+
+- the player picture should be visible in both views.(I'll add the images in img/players)
+
+- the nationality should be displayed with an image of the flag next to the ISO abbreviation (I'll add the images in img/nations)
+
+- the player's club should have the emblem next to the name. (I'll add the images in img/clubs).
+
+If you need any more details before you commit, please feel free to ask :)
+
+
+==========
+
+
+hey, i want to simplify the player positions in the json a bit..
+
+can you help me change them so that only GK, RB, LB, CB, CM, AM/W, ST remain in the json.
+
+bind them like this:
+(Original Position(s) - Simplified Category)
+
+GK - GK
+
+D (C) - CB
+
+D (R), D (RL), WB (R) - RB
+
+D (L), WB (L) - LB
+
+DM, M (C), M (LC), M (RC) - CM
+
+AM (RLC), AM (R/L), M (R/L) - AM/W
+
+ST (C) - ST
+
+============
+
+"Ново лято, нови провали"
+"Племенника е ухо"
+"Сезонът на заблатения Радев"
+"Оксфордски потайности"
+
+fixed bottom-0 left-0 right-0 mx-auto w-full max-w-xs max-h-[90vh] 
+
+=====================
+
+seems there might be somekind of a problem with the following regex for the release clause:
+r"#release.*?formatMoney\(\"(\d+)\"",
+
+it returns another amount in the page which doesn't relate to the #release span in any way..
+Any suggestions on how to fix this?
+
+I'm thinking that maybe we should first check if the script that indicates there's no release clause exists (99% of the players won't have a clause):
+$('#release').html('N/A');
+
+and if this line is not present then as a fallback try the regex matching?
+
+===========================
+
+hey g, after gathering the data, now i need to update the contract details from the temp html table (shortlist26.html) to the real deal json (shortlist26.json) using the matching player IDs, with the following:
+
+
+merge the following data ONLY IF the player's 'New Wage' from the html does not contain 'N/A':
+- wage:
+merge data ONLY IF the player's 'New Wage' amount from the html is higher than the 'wage' from the json:
+column 'New Wage' from the html -> into "wage" in the json (formatted as the other amounts in the json) 
+- contract expiry date:
+merge data ONLY IF the player's 'New Expiry' date from the html does not contain '2026'(I already have decent data in the json about the 2026 contracts):
+column 'New Expiry' from the html -> into "expiry" in the json (formatted as the other dates in the json) 
+- for every successfully merged player, add a new property inside "financial" - "verified", so that I have a flag which players have been checked.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

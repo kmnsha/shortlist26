@@ -37,13 +37,13 @@
   <!-- Bottom Sheet -->
   <div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-xs max-h-[90vh] bg-slate-800 border-t border-slate-600 rounded-t-2xl shadow-2xl z-50 overflow-y-auto overscroll-contain animate-slide-up">
     <!-- Handle Bar & Close Button -->
-    <div class="sticky top-0 bg-slate-800 px-3 py-2 flex items-center justify-between">
+    <div class="sticky top-0 bg-slate-800 px-3 py-2 -mb-8 flex items-center justify-between">
       <div class="flex-1 flex justify-center">
         <div class="w-12 h-1 bg-slate-600 rounded-full"></div>
       </div>
       <button
         on:click={handleClose}
-        class="ml-2 p-1 rounded hover:bg-slate-700 transition-colors text-slate-400 hover:text-slate-50"
+        class="ml-2 p-1 rounded hover:bg-slate-700 transition-colors text-slate-400 hover:text-slate-50 z-80"
       >
         <X size={20} />
       </button>
@@ -52,13 +52,13 @@
     <!-- Content -->
     <div class="relative h-40 overflow-hidden rounded-t-2xl">
       <img
-        src='img/players/{player.visuals.playerPhoto}'
+        src='/img/players/{player.visuals.playerPhoto}'
         alt={player.name}
         class="absolute right-2 top-2 h-32 object-cover object-left"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent"></div>
       <img
-        src='img/clubs/{player.visuals.clubBadge}'
+        src='/img/clubs/{player.visuals.clubBadge}'
         alt={player.info.club}
         class="absolute top-3 -left-16 w-40 h-40 object-cover opacity-10"
       />
@@ -72,7 +72,7 @@
         <h1 class="text-2xl font-bold leading-tight">{player.name}</h1>
         <div class="flex flex-wrap items-center gap-2 text-sm text-slate-300 mt-2">
           <img
-            src='img/nations/{player.visuals.nationFlag}'
+            src='/img/flags/{player.visuals.nationFlag}'
             alt={player.info.nation}
             class="w-5 h-4 object-cover"
           />
@@ -128,8 +128,8 @@
             <div class="text-lg font-bold text-slate-50 mt-1">{formatDate(player.financial.expiry)}</div>
           </div>
           <div class="bg-slate-700/50 p-3 rounded-lg">
-            <div class="text-sm text-slate-400">Release Clause</div>
-            <div class="text-lg font-bold text-slate-50 mt-1">{player.financial.releaseClause ?? '-'}</div>
+            <div class="text-sm text-slate-400">Release Fee</div>
+            <div class="text-lg font-bold text-slate-50 mt-1">{formatCurrency(player.financial.releaseFee) ?? '-'}</div>
           </div>
         </div>
       </div>
