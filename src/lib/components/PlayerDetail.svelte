@@ -82,7 +82,7 @@
           <span>•</span>
           <span>{player.info.age} yrs</span>
         </div>
-        <div class="mt-3 flex flex-wrap gap-2">
+        <div class="mt-2 flex flex-wrap gap-2">
           {#each player.info.position as pos (pos)}
             <span class="px-3 py-1 text-xs font-semibold rounded {getPositionColor(pos)}">
               {pos}
