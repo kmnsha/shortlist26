@@ -50,31 +50,31 @@
     </div>
 
     <!-- Content -->
-    <div class="relative h-40 overflow-hidden rounded-t-2xl">
+    <div class="relative p-4 h-32 overflow-hidden">
       <img
         src='/img/players/{player.visuals.playerPhoto}'
         alt={player.name}
         class="absolute right-2 top-2 h-32 object-cover object-left"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-800/30 to-transparent"></div>
       <img
         src='/img/clubs/{player.visuals.clubBadge}'
         alt={player.info.club}
         class="absolute top-3 -left-16 w-40 h-40 object-cover opacity-10"
       />
-      <button
+      <!-- <button
         on:click={toggleFavorite}
         class="absolute bottom-3 right-3 p-2 rounded-full z-10 {isFavorite ? 'bg-accent-light text-slate-900' : 'bg-slate-900/80 text-slate-400 hover:text-accent-light'} transition-colors"
       >
         <Heart size={20} fill={isFavorite ? 'currentColor' : 'none'} />
-      </button>
-      <div class="absolute bottom-3 left-3 right-3 text-slate-50">
-        <h1 class="text-2xl font-bold leading-tight">{player.name}</h1>
-        <div class="flex flex-wrap items-center gap-2 text-sm text-slate-300 mt-2">
+      </button> -->
+      <div class="absolute top-10 left-4 right-30 text-slate-50">
+        <h3 class="text-lg font-semibold text-slate-50 leading-tight">{player.name}</h3>
+        <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mt-1">
           <img
             src='/img/flags/{player.visuals.nationFlag}'
             alt={player.info.nation}
-            class="w-5 h-4 object-cover"
+            class="w-4 h-3 object-cover"
           />
           <span>{player.info.nation}</span>
           <span>•</span>
@@ -92,52 +92,61 @@
       </div>
     </div>
 
-    <div class="p-4 space-y-4">
+    <div class="px-4 space-y-2 bg-slate-950">
+      {#if player.tags && player.tags.length > 0}
+        <div class="flex flex-wrap gap-2">
+          {#each player.tags as tag (tag)}
+            <span class="px-2 py-0.5 text-xs font-medium rounded {getTagColor(tag)}">
+              {tag}
+            </span>
+          {/each}
+        </div>
+      {/if}
       <!-- Main Details -->
       <div class="grid grid-cols-3 gap-3">
-        <div class="bg-slate-700/50 p-3 rounded-lg text-center">
+        <div class="bg-slate-700/30 p-3 rounded-lg text-center">
           <div class="text-xl font-bold text-slate-50">{player.info.age}</div>
           <div class="text-xs text-slate-400 mt-1">Years Old</div>
         </div>
-        <div class="bg-slate-700/50 p-3 rounded-lg text-center">
+        <div class="bg-slate-700/30 p-3 rounded-lg text-center">
           <div class="text-xl font-bold text-slate-50">{player.info.height || '-'}</div>
           <div class="text-xs text-slate-400 mt-1">Height cm</div>
         </div>
-        <div class="bg-slate-700/50 p-3 rounded-lg text-center">
+        <div class="bg-slate-700/30 p-3 rounded-lg text-center">
           <div class="text-xl font-bold text-slate-50">{player.info.weight || '-'}</div>
           <div class="text-xs text-slate-400 mt-1">Weight kg</div>
         </div>
       </div>
 
       <!-- Financial Section -->
-      <div class="border-t border-slate-600 pt-4 space-y-3">
-        <h2 class="font-semibold text-slate-50">Financial</h2>
-        <div class="grid gap-3 sm:grid-cols-2">
-          <div class="bg-slate-700/50 p-3 rounded-lg">
-            <div class="text-sm text-slate-400">Wage p/w</div>
-            <div class="text-lg font-bold text-slate-50 mt-1">{formatCurrency(player.financial.wage, 'wage')}</div>
+      <div class="space-y-2">
+        <h4 class="text-sm font-semibold text-slate-300">Financial</h4>
+        <div class="grid gap-2 grid-cols-2">
+          <div class="bg-slate-700/30 p-2 rounded-lg">
+            <div class="text-xs text-slate-400">Wage p/w</div>
+            <div class="text font-bold text-slate-50 mt-1">{formatCurrency(player.financial.wage, 'wage')}</div>
           </div>
-          <div class="bg-slate-700/50 p-3 rounded-lg">
-            <div class="text-sm text-slate-400">Asking Price</div>
-            <div class="text-lg font-bold text-accent-light mt-1">{formatCurrency(player.financial.askingPrice, 'price')}</div>
+          <div class="bg-slate-700/30 p-2 rounded-lg">
+            <div class="text-xs text-slate-400">Asking Price</div>
+            <div class="text font-bold text-accent-light mt-1">{formatCurrency(player.financial.askingPrice, 'price')}</div>
           </div>
         </div>
-        <div class="grid gap-3 sm:grid-cols-2">
-          <div class="bg-slate-700/50 p-3 rounded-lg">
-            <div class="text-sm text-slate-400">Contract Expires</div>
-            <div class="text-lg font-bold text-slate-50 mt-1">{formatDate(player.financial.expiry)}</div>
+        <div class="grid gap-2 grid-cols-2">
+          <div class="bg-slate-700/30 p-2 rounded-lg">
+            <div class="text-xs text-slate-400">Contract Expires</div>
+            <div class="text font-bold text-slate-50 mt-1">{formatDate(player.financial.expiry)}</div>
           </div>
-          <div class="bg-slate-700/50 p-3 rounded-lg">
-            <div class="text-sm text-slate-400">Release Fee</div>
-            <div class="text-lg font-bold text-slate-50 mt-1">{formatCurrency(player.financial.releaseFee) ?? '-'}</div>
+          <div class="bg-slate-700/30 p-2 rounded-lg">
+            <div class="text-xs text-slate-400">Release Fee</div>
+            <div class="text font-bold text-slate-50 mt-1">{formatCurrency(player.financial.releaseFee) ?? '-'}</div>
           </div>
         </div>
       </div>
 
       <!-- Performance Stats -->
       {#if player.stats && Object.keys(player.stats).length > 0}
-        <div class="border-t border-slate-600 pt-4 space-y-3">
-          <h2 class="font-semibold text-slate-50">Performance</h2>
+        <div class="pt-2 space-y-2">
+          <h2 class="text-sm font-semibold text-slate-300">Performance</h2>
           <div class="grid grid-cols-2 gap-3 text-sm">
             {#if player.stats.apps !== undefined}
               <div class="flex justify-between">
@@ -191,7 +200,7 @@
         </div>
       {/if}
 
-      {#if player.tags && player.tags.length > 0}
+      <!-- {#if player.tags && player.tags.length > 0}
         <div class="border-t border-slate-600 pt-4 space-y-3">
           <h2 class="font-semibold text-slate-50">Tags</h2>
           <div class="flex flex-wrap gap-2">
@@ -202,7 +211,7 @@
             {/each}
           </div>
         </div>
-      {/if}
+      {/if} -->
 
       <div class="h-4"></div>
     </div>
