@@ -3147,8 +3147,7 @@
       "club": "Nottm Forest",
       "nation": "BRA",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 22,
       "height": 180,
@@ -4014,7 +4013,7 @@
     "financial": {
       "wage": 77307,
       "expiry": "2028-06-30",
-      "askingPrice": 4000000,
+      "askingPrice": 14000000,
       "verified": true
     },
     "stats": {
@@ -4098,7 +4097,7 @@
     "financial": {
       "wage": 53461,
       "expiry": "2030-06-30",
-      "askingPrice": 8500000,
+      "askingPrice": 38500000,
       "verified": true
     },
     "stats": {
@@ -4479,9 +4478,9 @@
       "reputation": 3800
     },
     "financial": {
-      "wage": 769,
+      "wage": 7769,
       "expiry": "2028-12-31",
-      "askingPrice": 10500000,
+      "askingPrice": 15500000,
       "verified": true
     },
     "stats": {
@@ -5163,8 +5162,7 @@
     "financial": {
       "wage": 40192,
       "expiry": "2029-06-30",
-      "askingPrice": 13000000,
-      "releaseFee": 3000000,
+      "askingPrice": 33000000,
       "verified": true
     },
     "stats": {
@@ -9562,7 +9560,7 @@
     "financial": {
       "wage": 40769,
       "expiry": "2029-06-30",
-      "askingPrice": 4700000,
+      "askingPrice": 24700000,
       "verified": true
     },
     "stats": {
@@ -11282,7 +11280,7 @@
     "financial": {
       "wage": 30000,
       "expiry": "2028-06-30",
-      "askingPrice": 3200000,
+      "askingPrice": 13200000,
       "verified": true
     },
     "stats": {
@@ -12581,7 +12579,7 @@
     "financial": {
       "wage": 54423,
       "expiry": "2029-06-30",
-      "askingPrice": 60000000,
+      "askingPrice": 65000000,
       "verified": true
     },
     "stats": {
@@ -14004,7 +14002,7 @@
       "reputation": 5250
     },
     "financial": {
-      "wage": 43653,
+      "wage": 143653,
       "expiry": "2030-06-30",
       "askingPrice": 60000000,
       "releaseFee": 125000000,
@@ -14094,9 +14092,9 @@
       "reputation": 4500
     },
     "financial": {
-      "wage": 187500,
-      "expiry": "2027-06-30",
-      "askingPrice": 24000000,
+      "wage": 37500,
+      "expiry": "2029-06-30",
+      "askingPrice": 44000000,
       "verified": true
     },
     "stats": {
@@ -14112,9 +14110,7 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": [
-      "high wages"
-    ]
+    "tags": []
   },
   {
     "id": "2000030160",
@@ -15268,7 +15264,7 @@
     "financial": {
       "wage": 3653,
       "expiry": "2027-12-31",
-      "askingPrice": 4200000,
+      "askingPrice": 14200000,
       "verified": true
     },
     "stats": {
@@ -15698,7 +15694,7 @@
     "financial": {
       "wage": 31153,
       "expiry": "2028-06-30",
-      "askingPrice": 10000000,
+      "askingPrice": 30000000,
       "verified": true
     },
     "stats": {
@@ -17037,7 +17033,6 @@
       "club": "Bournemouth",
       "nation": "FRA",
       "position": [
-        "CM",
         "AM/W",
         "ST"
       ],
@@ -17212,7 +17207,6 @@
       "club": "Juventus",
       "nation": "TUR",
       "position": [
-        "CM",
         "AM/W",
         "ST"
       ],

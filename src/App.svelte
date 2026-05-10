@@ -9,7 +9,7 @@
 
   let players = []
   let filteredPlayers = []
-  let viewMode = 'table' // 'table' or 'cards'
+  let viewMode = 'cards' // 'table' or 'cards'
   let sortBy = 'wage'
   let sortDirection = 'desc'
   let selectedPlayer = null

@@ -35,7 +35,7 @@
   ></div>
 
   <!-- Bottom Sheet -->
-  <div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-xs max-h-[90vh] bg-slate-800 border border-solid border-slate-800 rounded-t-2xl shadow-2xl z-50 overflow-y-auto overscroll-contain animate-slide-up">
+  <div class="fixed bottom-0 left-0 right-0 mx-auto p-1 pb-0 w-full max-w-xs max-h-[90vh] bg-slate-800 border border-solid border-slate-800 rounded-t-2xl shadow-2xl z-50 overflow-y-auto overscroll-contain animate-slide-up transition-discrete">
     <!-- Handle Bar & Close Button -->
     <div class="sticky top-0 bg-slate-800 px-3 py-2 -mb-8 flex items-center justify-between">
       <div class="flex-1 flex justify-center">
@@ -54,13 +54,13 @@
       <img
         src='/img/players/{player.visuals.playerPhoto}'
         alt={player.name}
-        class="absolute right-2 top-2 h-32 object-cover object-left"
+        class="absolute right-2 top-2 h-32 object-cover object-left z-10"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-800/30 to-transparent"></div>
       <img
         src='/img/clubs/{player.visuals.clubBadge}'
         alt={player.info.club}
-        class="absolute top-3 -left-16 w-40 h-40 object-cover opacity-10"
+        class="absolute top-3 -right-16 w-40 h-40 object-cover opacity-10"
       />
       <!-- <button
         on:click={toggleFavorite}
@@ -68,7 +68,7 @@
       >
         <Heart size={20} fill={isFavorite ? 'currentColor' : 'none'} />
       </button> -->
-      <div class="absolute top-10 left-4 right-30 text-slate-50">
+      <div class="absolute top-8 left-4 right-30 text-slate-50">
         <h3 class="text-lg font-semibold text-slate-50 leading-tight">{player.name}</h3>
         <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mt-1">
           <img
@@ -79,8 +79,6 @@
           <span>{player.info.nation}</span>
           <span>•</span>
           <span>{player.info.club}</span>
-          <span>•</span>
-          <span>{player.info.age} yrs</span>
         </div>
         <div class="mt-2 flex flex-wrap gap-2">
           {#each player.info.position as pos (pos)}
@@ -92,7 +90,7 @@
       </div>
     </div>
 
-    <div class="px-4 space-y-2 bg-slate-950">
+    <div class="px-4 space-y-2 bg-slate-900">
       {#if player.tags && player.tags.length > 0}
         <div class="flex flex-wrap gap-2">
           {#each player.tags as tag (tag)}
@@ -104,15 +102,15 @@
       {/if}
       <!-- Main Details -->
       <div class="grid grid-cols-3 gap-3">
-        <div class="bg-slate-700/30 p-3 rounded-lg text-center">
+        <div class="bg-slate-700/30 p-3 rounded text-center">
           <div class="text-xl font-bold text-slate-50">{player.info.age}</div>
           <div class="text-xs text-slate-400 mt-1">Years Old</div>
         </div>
-        <div class="bg-slate-700/30 p-3 rounded-lg text-center">
+        <div class="bg-slate-700/30 p-3 rounded text-center">
           <div class="text-xl font-bold text-slate-50">{player.info.height || '-'}</div>
           <div class="text-xs text-slate-400 mt-1">Height cm</div>
         </div>
-        <div class="bg-slate-700/30 p-3 rounded-lg text-center">
+        <div class="bg-slate-700/30 p-3 rounded text-center">
           <div class="text-xl font-bold text-slate-50">{player.info.weight || '-'}</div>
           <div class="text-xs text-slate-400 mt-1">Weight kg</div>
         </div>
@@ -122,21 +120,21 @@
       <div class="space-y-2">
         <h4 class="text-sm font-semibold text-slate-300">Financial</h4>
         <div class="grid gap-2 grid-cols-2">
-          <div class="bg-slate-700/30 p-2 rounded-lg">
+          <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Wage p/w</div>
             <div class="text font-bold text-slate-50 mt-1">{formatCurrency(player.financial.wage, 'wage')}</div>
           </div>
-          <div class="bg-slate-700/30 p-2 rounded-lg">
+          <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Asking Price</div>
             <div class="text font-bold text-accent-light mt-1">{formatCurrency(player.financial.askingPrice, 'price')}</div>
           </div>
         </div>
         <div class="grid gap-2 grid-cols-2">
-          <div class="bg-slate-700/30 p-2 rounded-lg">
+          <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Contract Expires</div>
             <div class="text font-bold text-slate-50 mt-1">{formatDate(player.financial.expiry)}</div>
           </div>
-          <div class="bg-slate-700/30 p-2 rounded-lg">
+          <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Release Fee</div>
             <div class="text font-bold text-slate-50 mt-1">{formatCurrency(player.financial.releaseFee) ?? '-'}</div>
           </div>

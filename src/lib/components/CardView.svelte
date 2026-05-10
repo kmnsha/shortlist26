@@ -19,63 +19,64 @@
       on:keydown={(e) => e.key === 'Enter' && handleCardClick(player)}
       role="button"
       tabindex="0"
-      class="bg-slate-800 border border-slate-600 rounded-lg overflow-hidden hover:border-accent-light hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
+      class="bg-slate-800 border-2 border-slate-800 rounded overflow-hidden hover:border-accent-light hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
     >
-      <!-- Player Image -->
-      <div class="relative h-36 bg-slate-800 overflow-hidden">
+
+      <!-- Content -->
+      <div class="relative p-4 h-32 overflow-hidden">
         <img
           src='/img/players/{player.visuals.playerPhoto}'
           alt={player.name}
-          class="h-full object-cover group-hover:scale-105 transition-transform"
+          class="absolute right-2 top-2 h-32 object-cover object-left z-10"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-
-        <!-- Club Badge -->
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-800/30 to-transparent"></div>
         <img
           src='/img/clubs/{player.visuals.clubBadge}'
           alt={player.info.club}
-          class="absolute top-2 right-2 w-20 h-20 p-1 object-contain opacity-40"
+          class="absolute top-3 -right-16 w-40 h-40 object-cover opacity-10"
         />
-
-        <!-- Favorite Button -->
-        <button
-          on:click|stopPropagation
-          class="absolute bottom-2 right-2 p-2 rounded-full bg-slate-900/80 text-slate-400 hover:text-accent-light hover:bg-slate-900 transition-colors"
+        <!-- <button
+          on:click={toggleFavorite}
+          class="absolute bottom-3 right-3 p-2 rounded-full z-10 {isFavorite ? 'bg-accent-light text-slate-900' : 'bg-slate-900/80 text-slate-400 hover:text-accent-light'} transition-colors"
         >
-          <Heart size={18} />
-        </button>
-      </div>
-
-      <!-- Card Content -->
-      <div class="p-4 space-y-3">
-        <!-- Player Name & Nation -->
-        <div>
-          <h3 class="text-lg font-semibold text-slate-50 group-hover:text-accent-light transition-colors">
-            {player.name}
-          </h3>
-          <div class="flex items-center gap-1 text-xs text-slate-400 mt-1">
+          <Heart size={20} fill={isFavorite ? 'currentColor' : 'none'} />
+        </button> -->
+        <div class="absolute top-4 left-4 right-30 text-slate-50">
+          <h3 class="text-lg font-semibold text-slate-50 leading-tight">{player.name}</h3>
+          <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mt-1">
             <img
               src='/img/flags/{player.visuals.nationFlag}'
               alt={player.info.nation}
               class="w-4 h-3 object-cover"
             />
             <span>{player.info.nation}</span>
-            <span class="text-slate-500">•</span>
+            <span>•</span>
             <span>{player.info.club}</span>
-            <span class="text-slate-500">•</span>
-            <span>{player.info.age} yrs</span>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mt-1">
+            <span>{player.info.age} years</span>
+            <span>•</span>
+            <span>{player.info.height || '-'}cm</span>
+            <span>•</span>
+            <span>{player.info.weight || '-'}kg</span>
+          </div>
+
+          <div class="mt-2 flex flex-wrap gap-2">
+            {#each player.info.position as pos (pos)}
+              <span class="px-3 py-1 text-xs font-semibold rounded {getPositionColor(pos)}">
+                {pos}
+              </span>
+            {/each}
           </div>
         </div>
+      </div>
 
-        <!-- Position & Stats -->
-        <div class="flex flex-wrap gap-1">
-          {#each player.info.position as pos (pos)}
-            <span class="px-2 py-1 text-xs font-semibold rounded {getPositionColor(pos)}">
-              {pos}
-            </span>
-          {/each}
-        </div>
+      
+      
 
+      <!-- Card Content -->
+      <div class="p-4 space-y-3 bg-slate-950">
         <!-- Financial Info -->
         <div class="grid grid-cols-2 gap-2 text-xs">
           <div class="bg-slate-700/50 p-2 rounded">
@@ -87,13 +88,17 @@
             <div class="font-semibold text-accent-light">{formatCurrency(player.financial.askingPrice, 'price')}</div>
           </div>
         </div>
-
-        <!-- Contract Expiry -->
-        <div class="text-xs border-t border-slate-600 pt-2">
-          <div class="text-slate-400">Contract Expires</div>
-          <div class="font-semibold text-slate-50">{formatDate(player.financial.expiry)}</div>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <!-- Contract Expiry -->
+          <div class="text-xs pt-2">
+            <div class="text-slate-400">Contract Expires</div>
+            <div class="font-semibold text-slate-50">{formatDate(player.financial.expiry)}</div>
+          </div>
+          <div class="text-xs pt-2">
+            <div class="text-slate-400">Release Fee</div>
+            <div class="font-semibold text-slate-50">{formatCurrency(player.financial.releaseFee) ?? '-'}</div>
+          </div>
         </div>
-
         <!-- Tags -->
         {#if player.tags && player.tags.length > 0}
           <div class="flex flex-wrap gap-1 pt-2">

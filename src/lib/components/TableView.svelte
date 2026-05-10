@@ -32,7 +32,7 @@
   }
 </script>
 
-<div class="overflow-x-auto bg-slate-800 rounded-lg border border-slate-600">
+<div class="overflow-x-auto bg-slate-800 rounded border border-slate-600">
   <table class="w-full">
     <thead>
       <tr class="border-b border-slate-600">
@@ -116,14 +116,14 @@
             {formatCurrency(player.financial.wage, 'wage')}
           </td>
 
-          <!-- Asking Price -->
-          <td class="px-4 py-3 text-sm text-accent-light font-medium">
-            {formatCurrency(player.financial.askingPrice, 'price')}
-          </td>
-
           <!-- Contract Expiry -->
           <td class="px-4 py-3 text-sm text-slate-300">
             {formatDate(player.financial.expiry)}
+          </td>
+
+          <!-- Asking Price -->
+          <td class="px-4 py-3 text-sm text-accent-light font-medium">
+            {formatCurrency(player.financial.askingPrice, 'price')}
           </td>
         </tr>
       {/each}
