@@ -13923,7 +13923,8 @@
       "rating": 0
     },
     "tags": [
-      "high wages"
+      "high wages",
+      "idiot"
     ]
   },
   {
@@ -16004,7 +16005,7 @@
     },
     "tags": [
       "high wages",
-      "new contract"
+      "idiot"
     ]
   },
   {
@@ -16146,8 +16147,7 @@
       "club": "Aston Villa",
       "nation": "ENG",
       "position": [
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 22,
       "height": 187,
@@ -16174,9 +16174,7 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": [
-      "new contract"
-    ]
+    "tags": []
   },
   {
     "id": "91208050",
@@ -16524,7 +16522,8 @@
       "rating": 0
     },
     "tags": [
-      "too short"
+      "too short",
+      "not interested"
     ]
   },
   {
@@ -16750,7 +16749,9 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "idiot"
+    ]
   },
   {
     "id": "14236223",

@@ -12,14 +12,14 @@
   }
 </script>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
   {#each players as player (player.id)}
     <div
       on:click={() => handleCardClick(player)}
       on:keydown={(e) => e.key === 'Enter' && handleCardClick(player)}
       role="button"
       tabindex="0"
-      class="bg-slate-900 border-2 border-slate-800 rounded overflow-hidden hover:border-accent-light/20 hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
+      class="bg-slate-900 border-1 border-slate-800 rounded overflow-hidden hover:border-accent-light/20 hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
     >
 
       <!-- Content -->

@@ -139,13 +139,13 @@
   $: localFilters.wageRange = wageSliderValue === wageRange.max ? null : { min: null, max: wageSliderValue }
 </script>
 
-<div class="bg-slate-800 rounded-lg border border-slate-800 p-4 space-y-4 sticky top-24">
+<div class="p-4 space-y-4">
   <div class="flex items-center justify-between">
-    <h2 class="text-lg font-semibold text-slate-50">Filters</h2>
+    <h2 class="text-lg text-sm font-semibold text-slate-300">Search</h2>
     <button
       on:click={resetFilters}
       class="text-xs text-accent-light hover:text-accent-light/80 transition-colors"
-    >
+      >
       Reset
     </button>
   </div>
