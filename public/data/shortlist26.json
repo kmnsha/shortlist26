@@ -12000,9 +12000,7 @@
       "club": "PSV",
       "nation": "MAR",
       "position": [
-        "CM",
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 24,
       "height": 185,
@@ -12778,8 +12776,7 @@
       "club": "Real Betis",
       "nation": "MAR",
       "position": [
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 23,
       "height": 177,
@@ -12791,7 +12788,7 @@
     "financial": {
       "wage": 35384,
       "expiry": "2029-06-30",
-      "askingPrice": 38000000,
+      "askingPrice": 40000000,
       "releaseFee": 85000000,
       "verified": true
     },
@@ -13682,8 +13679,7 @@
       "nation": "AUT",
       "position": [
         "CM",
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 25,
       "height": 180,
@@ -13725,8 +13721,6 @@
       "club": "Levante",
       "nation": "CMR",
       "position": [
-        "CM",
-        "AM/W",
         "ST"
       ],
       "age": 21,
@@ -13740,7 +13734,7 @@
       "wage": 24807,
       "expiry": "2029-06-30",
       "askingPrice": 27000000,
-      "releaseFee": 43500000,
+      "releaseFee": 47500000,
       "verified": true
     },
     "stats": {
@@ -13770,9 +13764,7 @@
       "club": "Koln",
       "nation": "GER",
       "position": [
-        "CM",
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 18,
       "height": 183,
@@ -17074,9 +17066,7 @@
       "club": "Eintracht Frankfurt",
       "nation": "TUR",
       "position": [
-        "CM",
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 19,
       "height": 186,
@@ -17118,9 +17108,7 @@
       "club": "Eintracht Frankfurt",
       "nation": "FRA",
       "position": [
-        "CM",
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 20,
       "height": 180,
@@ -17132,7 +17120,7 @@
     "financial": {
       "wage": 27115,
       "expiry": "2029-06-30",
-      "askingPrice": 41750000,
+      "askingPrice": 44750000,
       "verified": true
     },
     "stats": {
@@ -17292,7 +17280,6 @@
       "club": "New England",
       "nation": "ISR",
       "position": [
-        "CM",
         "AM/W",
         "ST"
       ],

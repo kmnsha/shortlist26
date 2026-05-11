@@ -19,7 +19,7 @@
       on:keydown={(e) => e.key === 'Enter' && handleCardClick(player)}
       role="button"
       tabindex="0"
-      class="bg-slate-800 border-2 border-slate-800 rounded overflow-hidden hover:border-accent-light/20 hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
+      class="bg-slate-900 border-2 border-slate-800 rounded overflow-hidden hover:border-accent-light/20 hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
     >
 
       <!-- Content -->
@@ -29,7 +29,7 @@
           alt={player.name}
           class="absolute right-2 bottom-0 h-24 object-cover object-left opacity-75 z-10"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-800/30 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-700/50 to-slate-700/30"></div>
         <img
           src='/img/clubs/{player.visuals.clubBadge}'
           alt={player.info.club}
@@ -79,11 +79,11 @@
       <div class="p-4 space-y-3 bg-slate-950">
         <!-- Financial Info -->
         <div class="grid grid-cols-2 gap-2 text-xs">
-          <div class="bg-slate-700/50 p-2 rounded">
+          <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-slate-400">Weekly Wage</div>
             <div class="font-semibold text-slate-50">{formatCurrency(player.financial.wage, 'wage')}</div>
           </div>
-          <div class="bg-slate-700/50 p-2 rounded">
+          <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-slate-400">Asking Price</div>
             <div class="font-semibold text-accent-light">{formatCurrency(player.financial.askingPrice, 'price')}</div>
           </div>
