@@ -27,7 +27,7 @@
 {#if showBottomSheet}
   <!-- Overlay -->
   <div
-    class="fixed inset-0 bg-black/50 z-40 transition-opacity"
+    class="fixed inset-0 bg-black/70 z-50 transition-opacity"
     on:click={handleClose}
     on:keydown={(e) => e.key === 'Escape' && handleClose()}
     role="button"
@@ -199,7 +199,7 @@
       {/if}
 
       <!-- {#if player.tags && player.tags.length > 0}
-        <div class="border-t border-slate-600 pt-4 space-y-3">
+        <div class="border-t border-slate-800 pt-4 space-y-3">
           <h2 class="font-semibold text-slate-50">Tags</h2>
           <div class="flex flex-wrap gap-2">
             {#each player.tags as tag (tag)}

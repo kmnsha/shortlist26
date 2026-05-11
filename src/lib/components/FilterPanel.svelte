@@ -139,7 +139,7 @@
   $: localFilters.wageRange = wageSliderValue === wageRange.max ? null : { min: null, max: wageSliderValue }
 </script>
 
-<div class="bg-slate-800 rounded-lg border border-slate-600 p-4 space-y-4 sticky top-24">
+<div class="bg-slate-800 rounded-lg border border-slate-800 p-4 space-y-4 sticky top-24">
   <div class="flex items-center justify-between">
     <h2 class="text-lg font-semibold text-slate-50">Filters</h2>
     <button
@@ -157,7 +157,7 @@
         type="text"
         bind:value={localFilters.name}
         placeholder="Filter by name, club, nation code.."
-        class="w-full pr-12 px-3 py-2 bg-slate-900 text-slate-50 placeholder-slate-500 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-accent-light focus:border-transparent transition-colors"
+        class="w-full pr-12 px-3 py-2 bg-slate-900 text-slate-50 placeholder-slate-500 rounded-lg border border-slate-800 focus:outline-none focus:ring-2 focus:ring-accent-light focus:border-transparent transition-colors"
         name="search"
         id="search"
       />
@@ -287,7 +287,7 @@
                 }
                 updateFilters()
               }}
-              class="h-4 w-4 rounded border-slate-600 bg-slate-700 text-accent-light focus:ring-accent-light"
+              class="h-4 w-4 rounded border-slate-800 bg-slate-700 text-accent-light focus:ring-accent-light"
             />
             <span>{option.label}</span>
           </label>
@@ -306,7 +306,7 @@
             type="checkbox"
             checked={allTagsSelected}
             on:change={(e) => toggleAllTags(e.target.checked)}
-            class="h-4 w-4 rounded border-slate-600 bg-slate-700 text-accent-light focus:ring-accent-light"
+            class="h-4 w-4 rounded border-slate-800 bg-slate-700 text-accent-light focus:ring-accent-light"
           />
           <span>Hide unrealistic</span>
         </label>
@@ -331,7 +331,7 @@
                 type="checkbox"
                 checked={localFilters.tags.includes(tag)}
                 on:change={() => toggleTag(tag)}
-                class="rounded bg-slate-700 border-slate-600 text-accent-light focus:ring-accent-light"
+                class="rounded bg-slate-700 border-slate-800 text-accent-light focus:ring-accent-light"
               />
               <span class="text-sm text-slate-300">{tag}</span>
             </label>

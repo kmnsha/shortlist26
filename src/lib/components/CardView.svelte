@@ -19,7 +19,7 @@
       on:keydown={(e) => e.key === 'Enter' && handleCardClick(player)}
       role="button"
       tabindex="0"
-      class="bg-slate-800 border-2 border-slate-800 rounded overflow-hidden hover:border-accent-light hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
+      class="bg-slate-800 border-2 border-slate-800 rounded overflow-hidden hover:border-accent-light/20 hover:shadow-lg hover:shadow-accent-light/20 transition-all cursor-pointer group"
     >
 
       <!-- Content -->
@@ -27,7 +27,7 @@
         <img
           src='/img/players/{player.visuals.playerPhoto}'
           alt={player.name}
-          class="absolute right-2 top-2 h-32 object-cover object-left z-10"
+          class="absolute right-2 top-2 h-32 object-cover object-left opacity-75 z-10"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-800/30 to-transparent"></div>
         <img
@@ -41,7 +41,7 @@
         >
           <Heart size={20} fill={isFavorite ? 'currentColor' : 'none'} />
         </button> -->
-        <div class="absolute top-4 left-4 right-30 text-slate-50">
+        <div class="absolute top-4 left-4 right-30 text-slate-50 z-20">
           <h3 class="text-lg font-semibold text-slate-50 leading-tight">{player.name}</h3>
           <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mt-1">
             <img

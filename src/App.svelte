@@ -161,7 +161,7 @@
         <!-- Player List -->
         <section class={showFilters ? 'lg:col-span-3' : 'lg:col-span-4'}>
           {#if filteredPlayers.length === 0}
-            <div class="flex items-center justify-center h-64 bg-slate-800 rounded-lg border border-slate-600">
+            <div class="flex items-center justify-center h-64 bg-slate-800 rounded-lg border border-slate-800">
               <p class="text-slate-400">No players match your filters</p>
             </div>
           {:else if viewMode === 'table'}

@@ -32,10 +32,10 @@
   }
 </script>
 
-<div class="overflow-x-auto bg-slate-800 rounded border border-slate-600">
+<div class="overflow-x-auto bg-slate-800 rounded border border-slate-800">
   <table class="w-full">
     <thead>
-      <tr class="border-b border-slate-600">
+      <tr class="border-b border-slate-800">
         {#each columns as col}
           <th class="px-4 py-3 text-left text-sm font-semibold text-slate-200">
             {#if col.sortable}
@@ -64,7 +64,7 @@
     <tbody>
       {#each players as player (player.id)}
         <tr
-          class="border-b border-slate-600 hover:bg-slate-700/50 transition-colors cursor-pointer"
+          class="border-b border-slate-800 hover:bg-slate-700/50 transition-colors cursor-pointer"
           on:click={() => dispatch('selectPlayer', player)}
           role="button"
           tabindex="0"
