@@ -1869,7 +1869,7 @@
     "financial": {
       "wage": 30576,
       "expiry": "2029-06-30",
-      "askingPrice": 17500000,
+      "askingPrice": 37500000,
       "verified": true
     },
     "stats": {
@@ -4350,7 +4350,7 @@
     "financial": {
       "wage": 41538,
       "expiry": "2030-06-30",
-      "askingPrice": 37500000,
+      "askingPrice": 47500000,
       "releaseFee": 51000000,
       "verified": true
     },
@@ -4563,7 +4563,7 @@
     "financial": {
       "wage": 44230,
       "expiry": "2029-06-30",
-      "askingPrice": 36250000,
+      "askingPrice": 46250000,
       "verified": true
     },
     "stats": {
@@ -8757,7 +8757,7 @@
     "financial": {
       "wage": 45000,
       "expiry": "2030-06-30",
-      "askingPrice": 42000000
+      "askingPrice": 65000000
     },
     "stats": {
       "apps": 0,
@@ -8969,7 +8969,7 @@
     "financial": {
       "wage": 35000,
       "expiry": "2030-06-30",
-      "askingPrice": 53000000
+      "askingPrice": 37000000
     },
     "stats": {
       "apps": 0,
@@ -10718,7 +10718,7 @@
     "financial": {
       "wage": 30769,
       "expiry": "2028-06-30",
-      "askingPrice": 15750000,
+      "askingPrice": 35750000,
       "verified": true
     },
     "stats": {
@@ -11569,7 +11569,6 @@
       "club": "Bournemouth",
       "nation": "ENG",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 26,
@@ -11582,7 +11581,7 @@
     "financial": {
       "wage": 40000,
       "expiry": "2029-06-30",
-      "askingPrice": 40000000
+      "askingPrice": 50000000
     },
     "stats": {
       "apps": 0,
@@ -12318,7 +12317,7 @@
     "financial": {
       "wage": 29500,
       "expiry": "2028-06-30",
-      "askingPrice": 36000000
+      "askingPrice": 56000000
     },
     "stats": {
       "apps": 0,
@@ -13264,7 +13263,7 @@
     "financial": {
       "wage": 40000,
       "expiry": "2029-06-30",
-      "askingPrice": 23500000
+      "askingPrice": 53500000
     },
     "stats": {
       "apps": 0,
@@ -13435,8 +13434,7 @@
     "financial": {
       "wage": 40192,
       "expiry": "2029-06-30",
-      "askingPrice": 26000000,
-      "releaseFee": 16000000,
+      "askingPrice": 46000000,
       "verified": true
     },
     "stats": {
@@ -14916,7 +14914,7 @@
     "financial": {
       "wage": 36346,
       "expiry": "2030-06-30",
-      "askingPrice": 21500000,
+      "askingPrice": 31500000,
       "verified": true
     },
     "stats": {
@@ -15133,7 +15131,7 @@
     "financial": {
       "wage": 31250,
       "expiry": "2027-06-30",
-      "askingPrice": 16000000,
+      "askingPrice": 32000000,
       "verified": true
     },
     "stats": {
@@ -17023,7 +17021,7 @@
   },
   {
     "id": "2000181790",
-    "name": "Eli Kroupi",
+    "name": "Junior Eli Kroupi",
     "visuals": {
       "playerPhoto": "2000181790.png",
       "clubBadge": "bournemouth.png",
@@ -17338,7 +17336,6 @@
       "club": "Benfica",
       "nation": "CRO",
       "position": [
-        "CM",
         "AM/W",
         "ST"
       ],
@@ -17831,7 +17828,7 @@
     "financial": {
       "wage": 80000,
       "expiry": "2029-06-30",
-      "askingPrice": 60000000,
+      "askingPrice": 55000000,
       "verified": true
     },
     "stats": {
@@ -17915,7 +17912,7 @@
     "financial": {
       "wage": 175384,
       "expiry": "2028-06-30",
-      "askingPrice": 45000000,
+      "askingPrice": 35000000,
       "releaseFee": 55000000,
       "verified": true
     },
@@ -18002,7 +17999,7 @@
     "financial": {
       "wage": 69230,
       "expiry": "2029-06-30",
-      "askingPrice": 22000000,
+      "askingPrice": 42000000,
       "verified": true
     },
     "stats": {
@@ -18044,7 +18041,7 @@
     "financial": {
       "wage": 39230,
       "expiry": "2029-06-30",
-      "askingPrice": 70000000,
+      "askingPrice": 74000000,
       "verified": true
     },
     "stats": {
@@ -18130,7 +18127,7 @@
     "financial": {
       "wage": 45384,
       "expiry": "2029-06-30",
-      "askingPrice": 16250000,
+      "askingPrice": 32000000,
       "releaseFee": 32000000,
       "verified": true
     },
@@ -18173,7 +18170,7 @@
     "financial": {
       "wage": 16000,
       "expiry": "2030-12-31",
-      "askingPrice": 22500000
+      "askingPrice": 24500000
     },
     "stats": {
       "apps": 0,
@@ -18256,7 +18253,7 @@
     "financial": {
       "wage": 14750,
       "expiry": "2027-06-30",
-      "askingPrice": 8000000
+      "askingPrice": 24000000
     },
     "stats": {
       "apps": 0,
@@ -18299,7 +18296,7 @@
     "financial": {
       "wage": 44423,
       "expiry": "2030-06-30",
-      "askingPrice": 21750000,
+      "askingPrice": 44750000,
       "verified": true
     },
     "stats": {
@@ -18385,7 +18382,7 @@
     "financial": {
       "wage": 12250,
       "expiry": "2030-06-30",
-      "askingPrice": 25000000
+      "askingPrice": 45000000
     },
     "stats": {
       "apps": 0,
@@ -18428,7 +18425,7 @@
     "financial": {
       "wage": 20000,
       "expiry": "2029-06-30",
-      "askingPrice": 23250000,
+      "askingPrice": 13250000,
       "releaseFee": 13250000,
       "verified": true
     },
@@ -18513,7 +18510,7 @@
     "financial": {
       "wage": 36153,
       "expiry": "2029-06-30",
-      "askingPrice": 32500000,
+      "askingPrice": 35500000,
       "verified": true
     },
     "stats": {

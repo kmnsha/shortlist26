@@ -23,17 +23,17 @@
     >
 
       <!-- Content -->
-      <div class="relative p-4 h-32 overflow-hidden">
+      <div class="relative p-4 h-28 overflow-hidden">
         <img
           src='/img/players/{player.visuals.playerPhoto}'
           alt={player.name}
-          class="absolute right-2 top-2 h-32 object-cover object-left opacity-75 z-10"
+          class="absolute right-2 bottom-0 h-24 object-cover object-left opacity-75 z-10"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-800/30 to-transparent"></div>
         <img
           src='/img/clubs/{player.visuals.clubBadge}'
           alt={player.info.club}
-          class="absolute top-3 -right-16 w-40 h-40 object-cover opacity-10"
+          class="absolute -top-2 -right-16 w-40 h-40 object-cover opacity-10"
         />
         <!-- <button
           on:click={toggleFavorite}
