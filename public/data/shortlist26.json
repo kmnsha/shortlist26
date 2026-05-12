@@ -12489,7 +12489,7 @@
     "financial": {
       "wage": 56250,
       "expiry": "2029-06-30",
-      "askingPrice": 13500000,
+      "askingPrice": 26500000,
       "verified": true
     },
     "stats": {
@@ -12505,9 +12505,7 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": [
-      "lacks quality"
-    ]
+    "tags": []
   },
   {
     "id": "71080414",
@@ -18583,7 +18581,7 @@
       "reputation": 4150
     },
     "financial": {
-      "wage": 196538,
+      "wage": 19538,
       "expiry": "2028-06-30",
       "askingPrice": 35000000
     },
