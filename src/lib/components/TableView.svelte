@@ -113,12 +113,12 @@
 
           <!-- Wage -->
           <td class="px-4 py-3 text-sm text-slate-300 font-medium">
-            {formatCurrency(player.financial.wage, 'wage')}
+            {formatCurrency(player.financial.wagesTotal, 'wage')}
           </td>
 
           <!-- Contract Expiry -->
           <td class="px-4 py-3 text-sm text-slate-300">
-            {formatDate(player.financial.expiry)}
+            {formatDate(player.financial.contractExpiry)}
           </td>
 
           <!-- Asking Price -->

@@ -108,7 +108,7 @@ export function filterPlayers(players, filters) {
     // Wage range filter
     if (filters.wageRange) {
       const { min, max } = filters.wageRange
-      const wage = player.financial.wage || 0
+      const wage = player.financial.wagesTotal || 0
       if (min !== undefined && wage < min) return false
       if (max !== undefined && wage > max) return false
     }
@@ -123,7 +123,7 @@ export function filterPlayers(players, filters) {
 
     // Contract expiry filter by category
     if (filters.contractExpiry && filters.contractExpiry.length > 0) {
-      const expiry = player.financial.expiry
+      const expiry = player.financial.contractExpiry
       const year = expiry ? new Date(expiry).getFullYear() : null
       const matchesExpiry = filters.contractExpiry.some(option => {
         switch (option) {
@@ -180,16 +180,16 @@ export function sortPlayers(players, field, direction = 'asc') {
         bVal = b.info.position[0]
         break
       case 'wage':
-        aVal = a.financial.wage
-        bVal = b.financial.wage
+        aVal = a.financial.wagesTotal
+        bVal = b.financial.wagesTotal
         break
       case 'price':
         aVal = a.financial.askingPrice
         bVal = b.financial.askingPrice
         break
       case 'expiry':
-        aVal = new Date(a.financial.expiry)
-        bVal = new Date(b.financial.expiry)
+        aVal = new Date(a.financial.contractExpiry)
+        bVal = new Date(b.financial.contractExpiry)
         break
       default:
         return 0
@@ -245,7 +245,7 @@ export function getPriceRange(players) {
  */
 export function getWageRange(players) {
   const wages = players
-    .map(p => p.financial.wage)
+    .map(p => p.financial.wagesTotal)
     .filter(w => w > 0)
   
   return {
@@ -278,7 +278,7 @@ export function getTagColor(tag) {
   // You can add logic here to determine if a tag is positive or negative
   // For now, we'll use a simple heuristic or you can pass tag type separately
   const positiveKeywords = ['rumoured']
-  const negativeKeywords = ['too old', 'too weak', 'injury prone', 'too expensive', 'high wages', 'not interested', 'too short', 'bad attitude', 'new contract', 'transfered elsewhere', 'too fat']
+  const negativeKeywords = ['too old', 'too weak', 'injury prone', 'expensive', 'high wages', 'not interested', 'too short', 'bad attitude', 'new contract', 'transfered elsewhere', 'too fat', 'idiot']
   
   const tagLower = tag.toLowerCase()
   

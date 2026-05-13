@@ -122,7 +122,7 @@
         <div class="grid gap-2 grid-cols-2">
           <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Wage p/w</div>
-            <div class="text font-bold text-slate-50 mt-1">{formatCurrency(player.financial.wage, 'wage')}</div>
+            <div class="text font-bold text-slate-50 mt-1">{formatCurrency(player.financial.wagesTotal, 'wage')}</div>
           </div>
           <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Asking Price</div>
@@ -132,7 +132,7 @@
         <div class="grid gap-2 grid-cols-2">
           <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Contract Expires</div>
-            <div class="text font-bold text-slate-50 mt-1">{formatDate(player.financial.expiry)}</div>
+            <div class="text font-bold text-slate-50 mt-1">{formatDate(player.financial.contractExpiry)}</div>
           </div>
           <div class="bg-slate-700/30 p-2 rounded">
             <div class="text-xs text-slate-400">Release Fee</div>
