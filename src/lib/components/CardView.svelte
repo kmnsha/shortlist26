@@ -25,13 +25,13 @@
       <!-- Content -->
       <div class="relative p-4 h-28 overflow-hidden">
         <img
-          src='/img/players/{player.visuals.playerPhoto}'
+          src='{import.meta.env.BASE_URL}img/players/{player.visuals.playerPhoto}'
           alt={player.name}
           class="absolute right-2 bottom-0 h-24 object-cover object-left opacity-75 z-10"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-700/50 to-slate-700/30"></div>
         <img
-          src='/img/clubs/{player.visuals.clubBadge}'
+          src='{import.meta.env.BASE_URL}img/clubs/{player.visuals.clubBadge}'
           alt={player.info.club}
           class="absolute -top-2 -right-16 w-40 h-40 object-cover opacity-10"
         />
@@ -45,7 +45,7 @@
           <h3 class="text-lg font-semibold text-slate-50 leading-tight">{player.name}</h3>
           <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mt-1">
             <img
-              src='/img/flags/{player.visuals.nationFlag}'
+              src='{import.meta.env.BASE_URL}img/flags/{player.visuals.nationFlag}'
               alt={player.info.nation}
               class="w-4 h-3 object-cover"
             />

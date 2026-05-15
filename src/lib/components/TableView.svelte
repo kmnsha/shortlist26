@@ -74,7 +74,7 @@
           <td class="px-4 py-3">
             <div class="flex items-center gap-3">
               <img
-                src='/img/players/{player.visuals.playerPhoto}'
+                src='{import.meta.env.BASE_URL}img/players/{player.visuals.playerPhoto}'
                 alt={player.name}
                 class="w-10 h-10 rounded-full object-cover bg-slate-700"
               />
@@ -86,7 +86,7 @@
                   </div>
                   <div class="text-xs text-slate-400 flex items-center gap-1">
                     <img
-                      src='/img/flags/{player.visuals.nationFlag}'
+                      src='{import.meta.env.BASE_URL}img/flags/{player.visuals.nationFlag}'
                       alt={player.info.nation}
                       class="w-4 h-3 object-cover"
                     />

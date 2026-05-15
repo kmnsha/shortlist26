@@ -38,7 +38,7 @@
 
   onMount(async () => {
     try {
-      const response = await fetch('/data/shortlist26.json')
+      const response = await fetch(`${import.meta.env.BASE_URL}data/shortlist26.json`)
       if (!response.ok) throw new Error('Failed to load player data')
       
       players = await response.json()
@@ -112,9 +112,9 @@
       <!-- Row 1: Logo and View/Filter Buttons -->
       <div class="flex items-center justify-between gap-4 mb-1">
         <div class="flex items-center gap-3">
-          <img src="/img/badge-white.jpg" alt="Newcastle United" class="w-12 h-12" />
+          <img src="{import.meta.env.BASE_URL}img/badge-white.jpg" alt="Newcastle United" class="w-12 h-12" />
           <div>
-            <h1 class="text-3xl"><img src="/img/logo.png" alt="Shortlist26" class="h-6" /></h1>
+            <h1 class="text-3xl"><img src="{import.meta.env.BASE_URL}img/logo.png" alt="Shortlist26" class="h-6" /></h1>
             <!-- <p class="text text-xs text-slate-300">Сезонът на заблатения Радев</p> -->
           </div>
         </div>
