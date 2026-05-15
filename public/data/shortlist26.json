@@ -1505,7 +1505,10 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "high wages",
+      "not interested"
+    ]
   },
   {
     "id": "91107360",
@@ -2360,7 +2363,6 @@
       "club": "Girona",
       "nation": "ESP",
       "position": [
-        "CB",
         "RB"
       ],
       "age": 22,
@@ -2409,8 +2411,7 @@
       "club": "Galatasaray",
       "nation": "CIV",
       "position": [
-        "CB",
-        "RB"
+        "CB"
       ],
       "age": 24,
       "height": 190,
@@ -2777,7 +2778,11 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "release fee",
+      "high wages",
+      "not interested"
+    ]
   },
   {
     "id": "18105815",
@@ -3429,7 +3434,10 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "high wages",
+      "not interested"
+    ]
   },
   {
     "id": "2000123482",
@@ -3764,7 +3772,10 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "high wages",
+      "expensive"
+    ]
   },
   {
     "id": "13196616",
@@ -4347,7 +4358,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 32000000,
+      "askingPrice": 35000000,
       "verified": true,
       "wages": 120000,
       "bonusYearly": 1560000,
@@ -4369,7 +4380,10 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "high wages",
+      "not interested"
+    ]
   },
   {
     "id": "67270690",
@@ -6010,8 +6024,7 @@
       "club": "Udinese",
       "nation": "FRA",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 25,
       "height": 192,
@@ -6058,8 +6071,7 @@
       "club": "Bologna",
       "nation": "CZE",
       "position": [
-        "CB",
-        "CM"
+        "CB"                
       ],
       "age": 22,
       "height": 194,
@@ -6153,8 +6165,7 @@
       "club": "Lens",
       "nation": "AUT",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 21,
       "height": 187,
@@ -6201,8 +6212,7 @@
       "club": "Troyes",
       "nation": "CIV",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 21,
       "height": 193,
@@ -6249,8 +6259,7 @@
       "club": "PSV",
       "nation": "NED",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 22,
       "height": 186,
@@ -6297,8 +6306,7 @@
       "club": "Metz",
       "nation": "SEN",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 21,
       "height": 182,
@@ -6345,8 +6353,7 @@
       "club": "Sporting CP",
       "nation": "BEL",
       "position": [
-        "CB",
-        "CM"
+        "CB"
       ],
       "age": 21,
       "height": 191,
@@ -6433,7 +6440,6 @@
       "club": "FC Groningen",
       "nation": "NED",
       "position": [
-        "CB",
         "CM"
       ],
       "age": 22,
@@ -6719,9 +6725,7 @@
       "club": "Sevilla",
       "nation": "ESP",
       "position": [
-        "RB",
-        "CM",
-        "AM/W"
+        "RB"
       ],
       "age": 21,
       "height": 186,
@@ -6823,7 +6827,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 31500000,
+      "askingPrice": 41500000,
       "verified": true,
       "wages": 65000,
       "bonusYearly": 845000,
@@ -6870,7 +6874,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 49000000,
+      "askingPrice": 44000000,
       "verified": true,
       "wages": 70000,
       "bonusYearly": 910000,
@@ -7111,7 +7115,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 40000000,
+      "askingPrice": 44000000,
       "wages": 35000,
       "bonusYearly": 455000,
       "contractStart": "2025-07-15",
@@ -8707,8 +8711,7 @@
       "club": "Sheff Utd",
       "nation": "ENG",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 21,
       "height": 180,
@@ -9568,7 +9571,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 33500000,
+      "askingPrice": 55500000,
       "verified": true,
       "wages": 77148,
       "bonusYearly": 1005092,
@@ -9900,7 +9903,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 40500000,
+      "askingPrice": 55500000,
       "verified": true,
       "wages": 77148,
       "bonusYearly": 1005092,
@@ -11061,8 +11064,7 @@
       "club": "Juventus",
       "nation": "NED",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 27,
       "height": 184,
@@ -11211,8 +11213,7 @@
       "club": "Wolves",
       "nation": "BRA",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 24,
       "height": 173,
@@ -11259,8 +11260,7 @@
       "club": "Brighton",
       "nation": "DEN",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 24,
       "height": 187,
@@ -11498,8 +11498,7 @@
       "club": "Udinese",
       "nation": "FRA",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 22,
       "height": 189,
@@ -11689,8 +11688,7 @@
       "club": "Monaco",
       "nation": "SEN",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 21,
       "height": 173,
@@ -11785,8 +11783,7 @@
       "club": "Bologna",
       "nation": "SCO",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 25,
       "height": 181,
@@ -11930,8 +11927,7 @@
       "club": "AZ",
       "nation": "NED",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 19,
       "height": 182,
@@ -11978,8 +11974,7 @@
       "club": "Lille",
       "nation": "COD",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 20,
       "height": 186,
@@ -12055,7 +12050,9 @@
       "motm": 0,
       "rating": 0
     },
-    "tags": []
+    "tags": [
+      "high wages"
+    ]
   },
   {
     "id": "2000143029",
@@ -12443,7 +12440,6 @@
       "club": "Almeria",
       "nation": "ESP",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 23,
@@ -12953,8 +12949,7 @@
       "club": "FC Porto",
       "nation": "DEN",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 19,
       "height": 187,
@@ -13141,7 +13136,6 @@
       "club": "Sp. Braga",
       "nation": "URU",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 25,
@@ -13379,8 +13373,7 @@
       "club": "Marseille",
       "nation": "CIV",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 25,
       "height": 177,
@@ -13423,8 +13416,7 @@
       "club": "RB Leipzig",
       "nation": "GER",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 19,
       "height": 191,
@@ -13471,7 +13463,6 @@
       "club": "Celta",
       "nation": "SWE",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 21,
@@ -13677,7 +13668,7 @@
       "reputation": 6924
     },
     "financial": {
-      "askingPrice": 42500000,
+      "askingPrice": 62500000,
       "verified": true,
       "wages": 100000,
       "contractExpiry": "2031-06-30",
@@ -14597,8 +14588,7 @@
       "club": "Juventus",
       "nation": "ITA",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 21,
       "height": 180,
@@ -14645,7 +14635,6 @@
       "club": "Napoli",
       "nation": "ITA",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 22,
@@ -14742,8 +14731,7 @@
       "club": "Real Sociedad",
       "nation": "CRO",
       "position": [
-        "CM",
-        "AM/W"
+        "CM"
       ],
       "age": 22,
       "height": 185,
@@ -14963,11 +14951,10 @@
       "club": "Famalicao",
       "nation": "POR",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 20,
-      "height": 186,
+      "height": 189,
       "weight": 80,
       "CA": 132,
       "PA": 157,
@@ -15291,7 +15278,6 @@
       "club": "Hoffenheim",
       "nation": "GER",
       "position": [
-        "AM/W",
         "ST"
       ],
       "age": 23,
@@ -15487,7 +15473,6 @@
       "club": "FC Midtjylland",
       "nation": "GNB",
       "position": [
-        "AM/W",
         "ST"
       ],
       "age": 21,
@@ -15586,7 +15571,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 31000000,
+      "askingPrice": 37000000,
       "wages": 70000,
       "bonusYearly": 910000,
       "contractStart": "2025-09-01",
@@ -16099,7 +16084,6 @@
       "club": "Fiorentina",
       "nation": "ITA",
       "position": [
-        "AM/W",
         "ST"
       ],
       "age": 25,
@@ -16210,7 +16194,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 48000000,
+      "askingPrice": 44000000,
       "wages": 69150,
       "bonusYearly": 901117,
       "contractStart": "2024-08-12",
@@ -16622,8 +16606,7 @@
       "club": "Bayer Leverkusen",
       "nation": "NED",
       "position": [
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 21,
       "height": 176,
@@ -17475,7 +17458,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 17500000,
+      "askingPrice": 37500000,
       "releaseFee": 37500000,
       "verified": true,
       "wages": 69483,
@@ -17667,7 +17650,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 22500000,
+      "askingPrice": 55500000,
       "verified": true,
       "wages": 70000,
       "bonusYearly": 910000,
@@ -18292,7 +18275,6 @@
       "club": "Villarreal",
       "nation": "GEO",
       "position": [
-        "AM/W",
         "ST"
       ],
       "age": 24,
@@ -18304,7 +18286,7 @@
       "status": "Active"
     },
     "financial": {
-      "askingPrice": 39000000,
+      "askingPrice": 49000000,
       "releaseFee": 68000000,
       "verified": true,
       "wages": 76315,
@@ -18489,8 +18471,7 @@
       "club": "Benfica",
       "nation": "NOR",
       "position": [
-        "AM/W",
-        "ST"
+        "AM/W"
       ],
       "age": 21,
       "height": 176,
@@ -18631,7 +18612,6 @@
       "club": "Toulouse",
       "nation": "FRA",
       "position": [
-        "CM",
         "AM/W"
       ],
       "age": 24,
